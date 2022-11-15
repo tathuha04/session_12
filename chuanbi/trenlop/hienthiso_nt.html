@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>bai-2</title>
+    </head>
+
+    <body>
+    </body>
+
+    <script>
+        //////////        CACH 1         ///////////:
+        let number = parseInt(prompt("Nhập số lượng số nguyên tố bạn muốn"));
+        let count = 0;
+        let N = 2;
+        let check = true;
+        let result = "";
+
+        while (count <= number) {
+            for (let i = 2; i < N; i++) {
+                if (N % i === 0) {
+                    check = false;
+                    break;
+                }
+                check = true;
+            }
+            if (check == true) {
+                count++
+                result += N + ","
+            }
+            N++
+        }
+        document.write(result);
+
+
+    //////////        CACH 2        ///////////:
+    // var number1 = parseInt(prompt("Nhap so luong can in ra:")); //cho người dùng nhập
+    // //Dùng vòng lặp để in ra các số nguyên tố
+    // for (var i = 0; i <= number1; i++) {
+    //     if (test_prime(i)) {
+    //         document.write(i + ", ");
+    //     }
+    // }
+
+    // Hàm kiểm tra số nguyên tố
+    // function test_prime(number) {
+    //     if (number < 2) {
+    //         return false;
+    //         // Nếu số nhập vào nhỏ hơn 2 thì không phải số nguyên tố
+
+    //     } else if (number === 2) {
+    //         return true;
+    //         //Nếu số nhập bằng 2 thì là số nguyên tố
+
+    //     } else {
+    //         // Nếu số lớn hơn 2 thì tạo vòng lặp để tìm số nguyên tố
+    //         for (var x = 2; x < number; x++) {
+    //             console.log(x);
+    //             console.log("number " + number)
+    //             if (number % x === 0) {
+    //                 return false;
+    //                 // Nếu số nhập vào chia hết cho chính nó thì là số nguyên tố
+    //             }
+    //         }
+    //         return true;
+    //     }
+    // }
+    </script>
+
+    </html>
+</body>
+
+</html>
